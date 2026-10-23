@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEHKON db BOZOR | Samsung rasmiy dileri</title>
+<meta name="description" content="Dehkon bozoridagi Samsung rasmiy dileri: smartfon, planshet, aksessuarlar, nasiya 3–24 oy.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,200..900&family=Inter:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('db-theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}</script>
+</head>
+<body>
+<div id="bg" aria-hidden="true"><svg preserveAspectRatio="none"><g id="rings"></g></svg></div>
+
+<div class="topbar"><div class="wrap tb">
+  <nav class="tb-links" style="display:flex;gap:22px">
+    <a href="#faq" data-i="tb_delivery"></a><a href="#faq" data-i="tb_warranty"></a><a href="#faq" data-i="nav_faq"></a><a href="#branches" data-i="nav_branches"></a><a href="#contact" data-i="nav_contact"></a>
+  </nav>
+  <span class="sp"></span>
+  <a class="tb-phone" id="tb-phone" href="#" hidden></a>
+  <span class="soc" id="tb-soc"></span>
+  <div class="langsel" id="langsel"><button id="lang-btn" aria-haspopup="true"><span id="lang-cur">O'zbek</span><svg class="i" viewBox="0 0 24 24" style="width:14px;height:14px"><path d="M6 9l6 6 6-6"/></svg></button><div class="menu"><button data-lang="uz">O'zbek</button><button data-lang="en">English</button><button data-lang="ru">Русский</button></div></div>
+</div></div>
+
+<header id="hdr">
+  <div class="wrap hd">
+    <a href="#top" class="logo" aria-label="DEHKON db BOZOR">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v35" pathLength="1"/><circle cx="15" cy="31" r="9" pathLength="1"/><circle cx="33" cy="31" r="9" pathLength="1"/></svg>
+      <span class="logo-word"><b>DEHKON</b><small><i>db</i> BOZOR</small></span>
+    </a>
+    <span class="sp"></span>
+    <button class="hbtn" id="b-search" data-aria="h_search"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></button>
+    <button class="hbtn" id="theme" data-aria="aria_theme"><svg class="i moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/></svg><svg class="i sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg></button>
+    <button class="hbtn" id="call" data-aria="btn_login"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></button>
+    <button class="hbtn" id="b-cart" data-aria="h_cart"><svg class="i" viewBox="0 0 24 24"><path d="M6 8h12l-1 12H7z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="badge" id="cart-n">0</span></button>
+    <button class="hbtn burger" id="burger" data-aria="aria_menu"><svg class="i" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <nav class="catnav"><div class="wrap cn" id="cn"></div><div class="mega" id="mega"><div class="wrap" id="mega-in"></div></div></nav>
+</header>
+
+<main id="top">
+  <section class="wrap hero">
+    <div class="slider" id="hero">
+      <div class="slides" id="slides"></div>
+      <button class="sl-nav prev" data-sl="-1" data-aria="aria_prev"><svg class="i" viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></button>
+      <button class="sl-nav next" data-sl="1" data-aria="aria_next"><svg class="i" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="bn">
+      <div class="panel"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg><div><h3 data-i="feat_1_title"></h3><p data-i="feat_1_desc"></p></div></div>
+      <div class="panel"><svg class="i" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="3"/><path d="M8 7h8M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01"/></svg><div><h3 data-i="feat_2_title"></h3><p data-i="feat_2_desc"></p></div></div>
+      <div class="panel"><svg class="i" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><h3 data-i="feat_3_title"></h3><p data-i="feat_3_desc"></p></div></div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="picker">
+    <h2 class="h2" data-i="pk_title"></h2>
+    <div class="pk-tabs" id="pk-tabs"></div>
+    <div class="pk-txt"><h3 id="pk-h"></h3><p id="pk-p"></p></div>
+    <div class="pk-grid" id="pk-grid"></div>
+  </section>
+
+  <section class="wrap sec" id="catalog" style="padding-top:24px">
+    <h2 class="h2" data-i="catalog_title"></h2>
+    <div class="toolbar">
+      <div class="tools">
+        <div class="chips" id="chips"></div>
+        <input id="q" type="search" data-ph="search_ph" autocomplete="off">
+        <select id="sort"><option value="def" data-i="sort_def"></option><option value="asc" data-i="sort_asc"></option><option value="desc" data-i="sort_desc"></option></select>
+      </div>
+      <p id="count" class="muted" aria-live="polite"></p>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="empty" id="empty" hidden><p data-i="empty"></p><button class="btn ghost" id="reset" data-i="empty_reset"></button></div>
+  </section>
+
+  <section class="wrap sec" id="devices" style="padding-top:0">
+    <h2 class="h2" data-i="dev_title"></h2><p class="sub" data-i="dev_hint"></p>
+    <div id="stage" class="stage"></div>
+  </section>
+
+  <section class="wrap sec" id="ar">
+    <div class="ar-g">
+      <div><h2 class="h2" data-i="ar_title"></h2><p class="sub" data-i="ar_sub"></p><div class="chips" id="ar-chips"></div></div>
+      <div class="panel mvbox">
+        <model-viewer id="mv" camera-controls auto-rotate shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" alt="3D" loading="lazy"><button slot="ar-button" class="btn sm" style="position:absolute;right:14px;bottom:14px" data-i="ar_btn"></button></model-viewer>
+        <span id="mv-status" class="muted" hidden></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="sec" hidden>
+    <div class="narrow">
+      <h2 class="h2" data-i="t_title"></h2>
+      <div class="panel slider2"><div id="t-track"></div></div>
+      <div class="ctl" id="t-ctl"><span class="muted" id="t-count"></span><div style="display:flex;gap:8px"><button class="btn ghost sm" data-t="-1" data-aria="aria_prev"><svg class="i" viewBox="0 0 24 24"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button><button class="btn ghost sm" data-t="1" data-aria="aria_next"><svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></div></div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq">
+    <div class="narrow">
+      <h2 class="h2" data-i="faq_title"></h2>
+      <div class="faq">
+        <div class="faq-item"><button aria-expanded="false" data-faq><span data-i="q1"></span><span class="faq-ico">+</span></button><div class="faq-body"><div><p data-i="a1"></p></div></div></div>
+        <div class="faq-item"><button aria-expanded="false" data-faq><span data-i="q2"></span><span class="faq-ico">+</span></button><div class="faq-body"><div><p data-i="a2"></p></div></div></div>
+        <div class="faq-item"><button aria-expanded="false" data-faq><span data-i="q3"></span><span class="faq-ico">+</span></button><div class="faq-body"><div><p data-i="a3"></p></div></div></div>
+        <div class="faq-item"><button aria-expanded="false" data-faq><span data-i="q4"></span><span class="faq-ico">+</span></button><div class="faq-body"><div><p data-i="a4"></p></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap sec" id="branches">
+    <h2 class="h2" data-i="map_title"></h2><p class="sub" data-i="map_subtitle"></p>
+    <div class="br-g"><div class="brl" id="brl"></div><div class="panel map"><iframe id="map" title="Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div></div>
+  </section>
+
+  <section class="wrap sec" id="contact">
+    <div class="fg">
+      <div class="panel fbox">
+        <form id="ct-form" style="display:grid;gap:16px" novalidate>
+          <h3 data-i="ct_title"></h3><p class="muted" style="margin:0" data-i="ct_sub"></p>
+          <label class="f"><span data-i="ct_name"></span><input id="ct-name" maxlength="60" autocomplete="name"></label>
+          <label class="f"><span data-i="ct_phone"></span><div class="phin"><span>+998</span><input id="ct-phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="90 123 45 67"></div></label>
+          <label class="f"><span data-i="ct_topic"></span><select id="ct-topic"><option value="question" data-i="ct_t_question"></option><option value="suggestion" data-i="ct_t_suggestion"></option><option value="complaint" data-i="ct_t_complaint"></option><option value="other" data-i="ct_t_other"></option></select></label>
+          <label class="f"><span data-i="ct_text"></span><textarea id="ct-text" maxlength="600" rows="5"></textarea><span class="cnt" id="ct-count">0 / 600</span></label>
+          <input class="hp" id="ct-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="err" id="ct-err"></p>
+          <button class="btn" id="ct-btn" type="submit" data-i="ct_send"></button>
+        </form>
+        <div class="done" id="ct-done" hidden><svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="23" pathLength="1"/><path d="M15 27l8 8 15-17" pathLength="1"/></svg><h3 data-i="ct_done_t"></h3><p class="muted" data-i="ct_done_m"></p><button class="btn ghost" id="ct-again" style="margin-top:1rem" data-i="ct_again"></button></div>
+      </div>
+      <div class="panel fbox">
+        <form id="fb-form" style="display:grid;gap:16px" novalidate>
+          <h3 data-i="fb_title"></h3><p class="muted" style="margin:0" data-i="fb_sub"></p>
+          <label class="f"><span data-i="fb_name"></span><input id="fb-name" maxlength="60" autocomplete="name"></label>
+          <label class="f"><span data-i="fb_device"></span><select id="fb-device"></select></label>
+          <div class="f" style="display:grid;gap:6px;font-size:.8rem;font-weight:600;color:var(--muted)"><span id="fb-rl" data-i="fb_rating"></span><div id="stars" role="radiogroup" aria-labelledby="fb-rl" style="display:flex;gap:4px"></div></div>
+          <label class="f"><span data-i="fb_text"></span><textarea id="fb-text" maxlength="400" rows="4"></textarea><span class="cnt" id="fb-count">0 / 400</span></label>
+          <input class="hp" id="fb-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="err" id="fb-err"></p>
+          <button class="btn" id="fb-btn" type="submit" data-i="fb_send"></button>
+        </form>
+        <div class="done" id="fb-done" hidden><svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="23" pathLength="1"/><path d="M15 27l8 8 15-17" pathLength="1"/></svg><h3 data-i="fb_done_t"></h3><p class="muted" data-i="fb_done_m"></p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ft">
+      <div>
+        <a href="#top" class="logo" style="margin-bottom:1rem"><svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true" style="width:36px;height:36px"><path d="M24 5v35"/><circle cx="15" cy="31" r="9"/><circle cx="33" cy="31" r="9"/></svg><span class="logo-word"><b style="font-size:1.2rem">DEHKON</b><small><i>db</i> BOZOR</small></span></a>
+        <p data-i="hero_desc"></p>
+      </div>
+      <div><h4 data-i="ft_pages"></h4><a href="#catalog" data-i="nav_catalog"></a><a href="#ar">3D</a><a href="#faq" data-i="nav_faq"></a><a href="#branches" data-i="nav_branches"></a></div>
+      <div><h4 data-i="ft_contact"></h4><a href="#" id="ft-phone" hidden></a><a href="#contact" data-i="nav_contact"></a><div class="soc" id="ft-soc"></div></div>
+      <div><h4 data-i="ft_pay"></h4><p data-i="ft_pay_d"></p></div>
+    </div>
+    <div class="fbot"><span><b>DEHKON <span id="secret">db</span> BOZOR</b> &nbsp; <span data-i="footer_rights"></span></span></div>
+  </div>
+</footer>
+
+<dialog id="pd-dlg" aria-labelledby="pd-name">
+  <button class="x" data-close data-aria="aria_close">×</button>
+  <div class="pd-g">
+    <div class="pd-img"><img id="pd-img" alt=""></div>
+    <div class="pd-c">
+      <span class="muted" id="pd-cat" style="font-size:.85rem;font-weight:600"></span>
+      <h3 id="pd-name"></h3><p class="muted" id="pd-desc" style="margin:0"></p>
+      <div class="pr"><b id="pd-price"></b><s id="pd-old"></s><em id="pd-off"></em></div>
+      <p class="muted" style="margin:.4rem 0 0;font-size:.85rem;font-weight:600" data-i="pd_inst"></p>
+      <div class="months" id="c-months"></div>
+      <div class="big"><span class="muted" style="font-size:.85rem" data-i="calc_monthly"></span><strong id="c-mo"></strong><span class="muted" style="font-size:.85rem"><span data-i="calc_total"></span> <b id="c-total" style="color:var(--fg)"></b></span></div>
+      <p class="muted" style="margin:0;font-size:.82rem"><svg class="i" viewBox="0 0 24 24" style="width:16px;height:16px;vertical-align:-3px;color:var(--ok)"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg> <span data-i="pd_warranty"></span></p>
+      <div class="row" style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" style="flex:1" id="pd-req" data-i="req_btn"></button><button class="btn dark" id="pd-add" data-i="add_cart"></button><button class="btn ghost" id="pd-3d" hidden data-i="pd_3d"></button></div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="rq-dlg" aria-labelledby="rq-title">
+  <button class="x" data-close data-aria="aria_close">×</button>
+  <div class="rq-g">
+    <aside class="rq-side">
+      <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v35"/><circle cx="15" cy="31" r="9"/><circle cx="33" cy="31" r="9"/></svg>
+      <ul>
+        <li><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i="rq_b1"></span></li>
+        <li><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i="rq_b2"></span></li>
+        <li><svg class="i" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg><span data-i="rq_b3"></span></li>
+      </ul>
+    </aside>
+    <div class="dlg-in">
+      <div id="rq-form">
+        <h3 id="rq-title" data-i="modal_title"></h3>
+        <p class="muted" style="margin:0 0 .5rem;font-size:.92rem" data-i="modal_desc"></p>
+        <div class="prod" id="rq-prod" hidden><b></b><span></span></div>
+        <form id="rq" novalidate style="margin-top:1rem">
+          <label class="f" for="rq-phone" data-i="modal_phone"></label>
+          <div class="phin big" style="margin-top:6px"><span>+998</span><input id="rq-phone" type="tel" inputmode="numeric" autocomplete="tel-national" placeholder="90 123 45 67"></div>
+          <input class="hp" id="rq-hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <p class="err" id="rq-err" style="margin-top:.5rem"></p>
+          <p class="note" data-i="rq_note"></p>
+          <button class="btn block" id="rq-btn" type="submit" data-i="modal_btn"></button>
+        </form>
+      </div>
+      <div class="done" id="rq-ok" hidden><svg class="check" viewBox="0 0 52 52"><circle cx="26" cy="26" r="23" pathLength="1"/><path d="M15 27l8 8 15-17" pathLength="1"/></svg><h3 data-i="success_title"></h3><p class="muted" id="rq-msg"></p><button class="btn ghost" data-close style="margin-top:1rem" data-i="success_close"></button></div>
+    </div>
+  </div>
+</dialog>
+
+<dialog id="cart-dlg" class="drawer" aria-labelledby="cart-h">
+  <button class="x" data-close data-aria="aria_close">×</button>
+  <div class="dr">
+    <h3 id="cart-h" data-i="cart_title"></h3>
+    <div class="dr-list" id="cart-list"></div>
+    <div style="display:flex;justify-content:space-between;font-weight:800;font-size:1.1rem;margin-bottom:.8rem"><span data-i="cart_total"></span><span id="cart-sum"></span></div>
+    <button class="btn block" id="cart-send" data-i="cart_send"></button>
+    <button class="btn ghost block" id="cart-clear" style="margin-top:8px" data-i="cart_clear"></button>
+  </div>
+</dialog>
+
+<dialog id="sr-dlg" class="topdlg" aria-label="Search">
+  <div style="padding:18px 18px 10px"><input id="sr-q" type="search" data-ph="sr_ph" autocomplete="off" style="font-size:1.05rem"></div>
+  <div class="sr-res" id="sr-res"></div>
+</dialog>
+
+<div id="toast" role="status"></div>
+
+<div id="chat">
+  <button id="ch-toggle" data-aria="ch_open"><svg class="op" viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg><svg class="cl" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg><span id="ch-dot"></span></button>
+  <section id="ch-panel" aria-label="Chat">
+    <div class="ch-h"><div class="ch-av"><svg viewBox="0 0 48 48"><path d="M24 7v33"/><circle cx="15" cy="31" r="9"/><circle cx="33" cy="31" r="9"/></svg></div><div><b data-i="ch_title"></b><small data-i="ch_online"></small></div></div>
+    <div class="ch-act"><a id="ch-call" href="#"><svg class="i" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span data-i="ch_call"></span></a><a id="ch-tg" href="#" target="_blank" rel="noopener" hidden><svg class="i" viewBox="0 0 24 24"><path d="M21 4L3 11l6 2 2 6 3-4 5 3z"/></svg><span data-i="ch_tg"></span></a></div>
+    <div class="ch-msgs" id="ch-msgs" aria-live="polite"></div>
+    <form class="ch-f" id="ch-form" autocomplete="off"><input id="ch-in" data-ph="ch_ph" maxlength="500"><button type="submit" data-aria="ch_send"><svg class="i" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button></form>
+    <div class="ch-pw" data-i="ch_powered"></div>
+  </section>
+</div>
+
+<script src="defaults.js"></script>
+<script src="config.js"></script>
+<script src="i18n.js"></script>
+<script src="icons.js"></script>
+<script src="app.js"></script>
+<script src="chat.js"></script>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+</body>
+</html>

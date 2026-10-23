@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin | DEHKON db BOZOR</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mona+Sans:wdth,wght@75..125,200..900&family=Inter:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>try{if(localStorage.getItem('db-theme')==='dark')document.documentElement.classList.add('dark')}catch(e){}</script>
+<style>
+body::after{display:none}
+.ag{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;align-items:end}
+.s1{grid-column:span 1}.s2{grid-column:span 2}.s3{grid-column:span 3}.s4{grid-column:span 4}.s6{grid-column:span 6}
+.pn{padding:18px}
+.bar{position:sticky;top:0;z-index:5;background:var(--bg);padding:18px 0;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);margin-bottom:20px}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:20px}
+.stack{display:grid;gap:14px}
+.ftag{cursor:pointer}
+details>summary{cursor:pointer;font-size:.85rem;color:var(--muted);padding:4px 0}
+#login{min-height:100vh;display:grid;place-items:center;padding:24px}
+.lbox{width:min(100%,24rem);padding:32px;display:grid;gap:14px}
+.lbox .logo-mark{width:48px;height:48px;margin-bottom:.4rem}
+.lbox h1{margin:0;font-size:1.6rem;letter-spacing:-.025em}
+@media(max-width:760px){.ag{grid-template-columns:1fr}.ag>*{grid-column:auto!important}}
+</style>
+</head>
+<body>
+<div id="login">
+  <form class="panel lbox" id="lf">
+    <svg class="logo-mark" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 5v35" pathLength="1"/><circle cx="15" cy="31" r="9" pathLength="1"/><circle cx="33" cy="31" r="9" pathLength="1"/></svg>
+    <h1>Admin kirish</h1>
+    <input id="l-u" placeholder="Login" autocomplete="username" autocapitalize="none">
+    <input id="l-p" type="password" placeholder="Parol" autocomplete="current-password">
+    <p class="err" id="l-err"></p>
+    <button class="btn" id="l-btn" type="submit">Kirish</button>
+    <a href="index.html" class="muted" style="font-size:.85rem">← Saytga qaytish</a>
+  </form>
+</div>
+
+<div id="app" class="wrap" style="padding-bottom:60px;position:relative;z-index:10" hidden>
+  <div class="bar">
+    <div><h1 style="margin:0;font-size:1.5rem;letter-spacing:-.02em">Admin panel</h1><span class="muted" id="mode" style="font-size:.85rem"></span></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap"><button class="btn" id="save">Saqlash</button><a class="btn ghost" href="index.html" target="_blank">Saytni ochish</a><button class="btn ghost" id="out">Chiqish</button></div>
+  </div>
+  <div class="tabs" id="tabs"></div>
+  <div class="stack" id="body"></div>
+</div>
+<div id="toast" role="status"></div>
+<script src="defaults.js"></script>
+<script src="config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
